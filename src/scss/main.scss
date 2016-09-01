@@ -1,0 +1,18 @@
+@import 'atoms/buttons';
+body {
+	margin: 0;
+	background-image: linear-gradient(to bottom, #f84913, #e82713);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+button {
+	@extend %btn-base;
+}
+
+button.btn-symbol {
+	@extend %btn-symbol;
+}
