@@ -1,0 +1,7 @@
+@import 'molecules/playback-controls';
+
+.playback-controls-primary {
+	@extend %playback-controls-primary;
+
+	font-size: 1.5em;
+}

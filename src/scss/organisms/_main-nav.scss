@@ -6,8 +6,8 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 
 	h1 {
 		@extend %nav-current;

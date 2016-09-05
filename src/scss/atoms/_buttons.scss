@@ -12,9 +12,7 @@
 %btn-symbol {
 	padding: 0.5em;
 	box-sizing: border-box;
-	width: 2em;
-	height: 2em;
-	-webkit-clip-path: circle(1em at 1em);
+	-webkit-clip-path: circle();
 	line-height: 1em;
 	outline: 0;
 

@@ -1,9 +1,11 @@
 @import 'atoms/buttons';
+@import 'atoms/symbols';
 @import 'organisms/main-nav';
+@import 'pages/guitar-practice';
 
 body {
 	margin: 0;
-	background-image: linear-gradient(to bottom, #f84913, #e82713);
+	background-image: linear-gradient(to bottom, #ff5913, #e82713 50%);
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
