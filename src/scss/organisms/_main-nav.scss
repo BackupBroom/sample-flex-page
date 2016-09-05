@@ -1,0 +1,24 @@
+@import 'atoms/nav-items';
+
+%main-nav {
+	background-color: #ffe4d8;
+	color: #151c1f;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+
+	h1 {
+		@extend %nav-current;
+
+		align-self: center;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	a {
+		@extend %nav-active;
+	}
+}

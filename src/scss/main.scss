@@ -1,4 +1,6 @@
 @import 'atoms/buttons';
+@import 'organisms/main-nav';
+
 body {
 	margin: 0;
 	background-image: linear-gradient(to bottom, #f84913, #e82713);
@@ -15,4 +17,8 @@ button {
 
 button.btn-symbol {
 	@extend %btn-symbol;
+}
+
+nav {
+	@extend %main-nav;
 }

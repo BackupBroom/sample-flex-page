@@ -1,0 +1,21 @@
+@mixin nav-item-base {
+	font-size: inherit;
+	line-height: 1;
+	margin: 0;
+	padding: 0.5em;
+}
+
+%nav-current {
+	@include nav-item-base;
+
+	color: inherit;
+	font-size: inherit;
+	font-weight: bold;
+}
+
+%nav-active {
+	@include nav-item-base;
+	
+	color: #e12a21;
+	text-decoration: none;
+}

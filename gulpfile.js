@@ -38,6 +38,7 @@ gulp.task('sass', function(){
 	return gulp.src('src/scss/**/*.scss')
 		.pipe(sourcemaps.init({ loadMaps: true }))
 			.pipe(sass())
+			.on('error', swallowError)
 			.pipe(cssnano())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('dist'))
@@ -67,3 +68,11 @@ gulp.task('clean:dist', function(){
 gulp.task('default', function(){
 	runSeq('clean:dist', ['html', 'sass', 'browserSync', 'watch']);
 });
+
+
+function swallowError (error) {
+
+	console.log(error.toString())
+
+	this.emit('end')
+}
