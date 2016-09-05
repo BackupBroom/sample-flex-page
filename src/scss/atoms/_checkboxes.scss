@@ -1,0 +1,14 @@
+%checkbox-base {
+	display: none;
+
+	+ label {
+		padding: 0.5em 0.8em;
+	}
+}
+
+%checkbox-active {
+	+ label {
+		background-color: #e12a21;
+		border-radius: 5px;
+	}
+}

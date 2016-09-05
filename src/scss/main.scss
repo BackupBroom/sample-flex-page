@@ -1,5 +1,6 @@
 @import 'atoms/buttons';
 @import 'atoms/symbols';
+@import 'atoms/checkboxes';
 @import 'organisms/main-nav';
 @import 'pages/guitar-practice';
 
@@ -23,4 +24,12 @@ button.btn-symbol {
 
 nav {
 	@extend %main-nav;
+}
+
+input[type=checkbox] {
+	@extend %checkbox-base;
+}
+
+input[type=checkbox]:checked {
+	@extend %checkbox-active;
 }

@@ -26,36 +26,42 @@
 				<button class="btn-symbol play"><span class="symbol symbol-play">&#9658;</span></button>
 				<button class="btn-symbol">&rarr;</button>
 			</div>
-			<div>
-				<p>Track</p>
-				<p>Artist</p>
+			<div class="track-details">
+				<h2>Another Love Song</h2>
+				<p>Queens of the Stone Age</p>
 			</div>
-			<div>
+			<div class="track-navigation">
 				<input type="range" name="">
-				<button class="btn-symbol">-5</button>
+			</div>
+			<div class="track-navigation-controls">
+				<button class="btn-symbol">5</button>
 				<button>Delete markers</button>
-				<button class="btn-symbol">+5</button>
+				<button class="btn-symbol">5</button>
 			</div>
 		</div>
 
-		<div>
-			<label>
-				<input type="checkbox">
-				SLOW
-			</label>
-			<label>
-				<input type="checkbox">
-				SETLIST
-			</label>
-			<label>
-				<input type="checkbox">
-				COUNT
-			</label>
-			<input type="range" name="">
+		<div class="bottom-nav">
+			<div class="playback-controls">
+				<input type="checkbox" id="slow">
+				<label for="slow">
+					SLOW
+				</label>
+				<input type="checkbox" id="setlist">
+				<label for="setlist">
+					SETLIST
+				</label>
+				<input type="checkbox" id="count">
+				<label for="count">
+					COUNT
+				</label>
+			</div>
+			<div class="volume-slider">
+				<input type="range" name="">
+			</div>
 		</div>
 
 	</main>
 
-	
+
 </body>
 </html>

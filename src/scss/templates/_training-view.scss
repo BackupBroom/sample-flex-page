@@ -1,7 +1,30 @@
 @import 'molecules/playback-controls';
+@import 'molecules/track-details';
+@import 'molecules/track-navigation';
+@import 'molecules/bottom-nav';
 
 .playback-controls-primary {
 	@extend %playback-controls-primary;
 
 	font-size: 1.5em;
+}
+
+.track-details {
+	@extend %track-details;
+}
+
+.track-navigation {
+	@extend %track-navigation;
+}
+
+.track-navigation-controls {
+	@extend %track-navigation-controls;
+}
+
+.playback-controls {
+	@extend %playback-controls;
+}
+
+.bottom-nav {
+	@extend %bottom-nav;
 }

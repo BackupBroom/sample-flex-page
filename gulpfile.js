@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano');
 var del = require('del');
 var runSeq = require('run-sequence');
@@ -39,6 +40,9 @@ gulp.task('sass', function(){
 		.pipe(sourcemaps.init({ loadMaps: true }))
 			.pipe(sass())
 			.on('error', swallowError)
+			.pipe(autoprefixer({
+				browsers: ['last 3 iOS versions']
+			}))
 			.pipe(cssnano())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('dist'))
