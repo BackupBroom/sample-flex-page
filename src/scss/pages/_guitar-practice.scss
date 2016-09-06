@@ -24,4 +24,13 @@
 		justify-content: space-around;
 	}
 
+	@media all and (min-width: 25.875rem) {
+		font-size: 20px;
+
+		.grow-container {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+	}
+
 }

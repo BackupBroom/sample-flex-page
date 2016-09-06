@@ -1,6 +1,7 @@
 @import 'molecules/playback-controls';
 @import 'molecules/track-details';
 @import 'molecules/track-navigation';
+@import 'molecules/volume-slider';
 @import 'organisms/playback-settings';
 
 .playback-controls-primary {
@@ -27,4 +28,8 @@
 
 .playback-settings {
 	@extend %playback-settings;
+}
+
+.volume-slider {
+	@extend %volume-slider;
 }
