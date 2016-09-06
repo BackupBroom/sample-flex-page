@@ -1,14 +1,15 @@
-%checkbox-base {
+%switch-button {
+
 	display: none;
 
-	+ label {
+	& + label {
 		padding: 0.5em 0.8em;
-	}
-}
-
-%checkbox-active {
-	+ label {
-		background-color: #e12a21;
 		border-radius: 5px;
+		font-size: 0.85em;
 	}
+
+	&:checked + label {
+		background-color: #e12a21;
+	}
+
 }

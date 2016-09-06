@@ -1,7 +1,7 @@
 @import 'molecules/playback-controls';
 @import 'molecules/track-details';
 @import 'molecules/track-navigation';
-@import 'molecules/bottom-nav';
+@import 'organisms/playback-settings';
 
 .playback-controls-primary {
 	@extend %playback-controls-primary;
@@ -22,9 +22,9 @@
 }
 
 .playback-controls {
-	@extend %playback-controls;
+	@extend %playback-controls-secondary;
 }
 
-.bottom-nav {
-	@extend %bottom-nav;
+.playback-settings {
+	@extend %playback-settings;
 }

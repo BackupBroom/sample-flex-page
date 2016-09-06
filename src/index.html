@@ -8,6 +8,8 @@
 </head>
 <body class="guitar-practice">
 
+	<div class="page">
+
 	<header>
 		<nav>
 			<a href="#">Settings</a>
@@ -20,7 +22,7 @@
 
 		<p class="training-time-summary">10 minutes today</p>
 
-		<div>
+		<div class="grow-container">
 			<div class="playback-controls-primary">
 				<button class="btn-symbol">&larr;</button>
 				<button class="btn-symbol play"><span class="symbol symbol-play">&#9658;</span></button>
@@ -30,17 +32,17 @@
 				<h2>Another Love Song</h2>
 				<p>Queens of the Stone Age</p>
 			</div>
-			<div class="track-navigation">
-				<input type="range" name="">
-			</div>
-			<div class="track-navigation-controls">
-				<button class="btn-symbol">5</button>
-				<button>Delete markers</button>
-				<button class="btn-symbol">5</button>
-			</div>
+		</div>
+		<div class="track-navigation">
+			<input type="range" name="">
+		</div>
+		<div class="track-navigation-controls">
+			<button class="btn-symbol">5</button>
+			<button>Delete markers</button>
+			<button class="btn-symbol">5</button>
 		</div>
 
-		<div class="bottom-nav">
+		<div class="playback-settings">
 			<div class="playback-controls">
 				<input type="checkbox" id="slow">
 				<label for="slow">
@@ -48,7 +50,7 @@
 				</label>
 				<input type="checkbox" id="setlist">
 				<label for="setlist">
-					SETLIST
+					<span class="symbol symbol-infinity">&infin;</span>&nbsp;SETLIST
 				</label>
 				<input type="checkbox" id="count">
 				<label for="count">
@@ -61,6 +63,8 @@
 		</div>
 
 	</main>
+
+	</div>
 
 
 </body>

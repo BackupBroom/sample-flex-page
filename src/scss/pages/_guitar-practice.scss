@@ -9,4 +9,19 @@
 		text-align: center;
 		background-color: rgba(0, 0, 0, 0.175);
 	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		flex-grow: 1;
+	}
+
+	.grow-container {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 }

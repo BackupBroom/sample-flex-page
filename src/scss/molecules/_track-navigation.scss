@@ -1,6 +1,6 @@
 %track-navigation {
 	text-align: center;
-	padding: 0.75rem;
+	padding: 0 0.75rem;
 
 	input[type=range] {
 		-webkit-appearance: none;
@@ -9,6 +9,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
+		display: block;
 	}
 	input[type=range]:focus {
 		outline: none;
@@ -32,5 +33,5 @@
 %track-navigation-controls {
 	display: flex;
 	justify-content: space-between;
-	padding: 0.75rem;
+	padding: 0.25rem 0.75rem;
 }
